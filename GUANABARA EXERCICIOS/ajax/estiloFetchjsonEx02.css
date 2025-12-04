@@ -1,0 +1,27 @@
+body{
+
+    background-color: #4d20e2;
+    font-family: 15pt Arial, sans-serif;
+    color: whitesmoke;
+    
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    display: block; /* o display block com o margin auto faz o botao ficar centralizado*/
+    margin: auto;
+    
+}
+footer{
+    color: white;
+    font-size: 10pt;
+    text-align: center; 
+    font-style: italic;
+    }

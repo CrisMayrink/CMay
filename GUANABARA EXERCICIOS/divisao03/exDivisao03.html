@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="exdivisao03.css">
+        <title>DOM - Analisador de números</title>            
+    </head>
+    <body>
+        <header>   
+        <h1>Divisor de números</h1>
+        </header> 
+        <section>
+        <div class= "input-group">
+                <label for="numeros">Digite um número inteiro positivo: </label> <br>
+                <input type="number" class="form-control" id="numeros"  placeholder= "Ex: 7">
+                
+        </div>
+        
+    
+        <p>
+            <button class=" btn" type="button" id="btnAdicionar">Adicionar</button>
+            <button class="btn" type="button"  id="btnDividir">Dividir (1° pelo 2°)</button>
+            <br> 
+            <br><!-- Este botão limpa o formulário automaticamente -->
+            <button class="btn" type= button id="btnLimpar" onclick="limpar()">Limpar Formulário</button>
+            <br>
+        </p>
+
+        <h3> Resultado e lista:</h3>
+        <ul class="lista-numeros" id="res">
+            <!-- Os itens serão inseridos aqui via JavaScript -->
+            <li>Números adicionados: nenhum</li>
+        </ul>
+
+        </section>
+        <footer>
+            <p>Desenvolvido por CMayrink</p>
+        </footer>
+        <script src="exDivisao03.js"></script>
+    </body>
+</html>

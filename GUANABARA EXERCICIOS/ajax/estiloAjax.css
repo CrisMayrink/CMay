@@ -1,0 +1,44 @@
+body{
+
+    background-color: #4d20e2;
+    font-family: 15pt Arial, sans-serif;
+    color: #f3f0f0;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+section{
+    background-color: beige;
+    color: #000;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);
+    justify-content: center;
+    align-items: center;    
+}
+p{
+    text-align: justify;
+}
+#img_dog{
+    width: 100%;  /* faz com que a image seja redimensionada automaticamente para o tamanho do padding*/
+    height: auto; 
+    object-fit: cover; 
+    border-radius: 10px;    
+}
+button{
+    background-color: blue;
+    color: white;
+    border-radius: 3px;
+    display: block; /* o display block com o margin auto faz o botao ficar centralizado*/
+    margin: auto;
+    
+}
+footer{
+    color: white;
+    font-size: 10pt;
+    text-align: center; 
+    font-style: italic;
+    }

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- instruções ao navegador para controlar as dimensões e escala da pgn.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>DOM - Eventos</title>
+    <style>
+        
+        div#area {
+            font-size: 25px;
+            background: rgb(45 230 149);
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+         
+    }</style>
+</head>
+<body>
+    <div id="area" onclick="clicar()"onmouseenter="entrar()" onmouseout="sair()">
+        Interaja ...
+    </div>
+
+    <script>
+        var a = window.document.getElementById('area')
+        function clicar() {
+           
+            a.innerText = 'Clicou!'
+            a.style.background = 'green'
+        }
+        function entrar() {
+            a.innerText = 'Entrou!'
+            a.style.background = 'red'
+          }
+        function sair() {
+            a.innerText = 'Saiu!'
+            a.style.background = 'blue'
+        }
+    </script>
+</body>
+</html>

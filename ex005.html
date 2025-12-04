@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- instruções ao navegador para controlar as dimensões e escala da pgn.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>DOM - primeiros passos.</title>
+    <style>
+        /* a css na head é chamada de incorporada*/
+        /*fonte face é uma regra que permite aos desenvolvedores usar fontes personalizadas em um site, carregando-as de um arquivo externo (como um servidor ou do computador do usuário) em vez de usar apenas as fontes já instaladas nos navegadores.*/
+        /*@font-face {
+            font-family: "opensans";
+            src: url('fonts/OpenSans-Regular.woff') format('woff');
+            font-style: normal;
+        }
+        @font-face {
+            font-family: "Nobile-Bold";
+            src: url("fonts/Nobile-Bold.woff2") format("woff2");
+            font-weight: normal;
+            font-style: normal;
+        }*/
+        
+        body {
+            font-family: Arial;
+            margin: 20px;
+            background-color: lightgoldenrodyellow;
+        }
+        /*vinculados ao @font-face
+            #primeiro-container{
+            font-family: opensans
+        }
+
+        #segundo-container{
+            font-family: Nobile-Bold
+        }*/
+
+        h1 {
+            text-decoration: underline;
+            font-family: I, Verdana, Helvetica, sans-serif;
+            color: red;
+        }
+
+        h2 {
+            text-decoration: underline;
+            font: normal, Arial;
+            color: indigo;
+        }
+
+        h3 {
+            font: normal, Arial;
+            color: indigo;
+        }
+
+        p {
+            font-size: 12pt;
+            text-align: justify;
+            text-indent: 50px;
+        }
+
+        .lista-recuada {
+            padding-left: 70px; /* Aumenta o recuo da lista */
+        }
+        /* abaixo segue um configuração de box model para a div*/
+        div {
+            width: 320px;
+            background-color: gold;
+        }
+    </style>
+</head>
+<body>
+    <h1>O que é DOM? </h1>
+
+    <h2><strong>Document Object Model</strong>: Interface de Programação de Aplicações para Documentos</h2> <!--strong é exemplo de css inline-->
+
+    <p id="primeiro-container">O <strong> Modelo de Objeto de Documento </strong>(DOM) é uma interface de programação para documentos HTML, XML e SVG . Ele fornece uma representação estruturada do documento como uma árvore. O <strong>DOM</strong> define métodos que permitem acesso à árvore, para que eles possam alterar a estrutura, estilo e conteúdo do documento. </p>
+
+    <p id="segundo-container">O <strong>DOM</strong> fornece uma representação do documento como um grupo estruturado de nós e objetos, possuindo várias propriedades e métodos. Os nós também podem ter manipuladores de eventos que lhe são inerentes, e uma vez que um evento é acionado, os manipuladores de eventos são executados. Essencialmente, ele conecta páginas web a <i>scripts</i> ou <i>linguagens de programação</i>.</p>
+
+    <h3>Estrutura da árvore DOM</h3>
+
+    <ol type=" i">
+        <li>Raiz: O nó superior é o objeto Document, que é o objeto global para a página.</li>
+        <li>Nós: Cada nó pode representar um elemento (como), um atributo (como id, class) ou um nó de texto.</li>
+        <li>Hierarquia: Os nós são organizados de forma hierárquica.</li>
+        <li>Nós-pai (Parent): Um nó que tem um ou mais nós descendentes.</li>
+        <li>Nós-filho (Child): Um nó que é descendente de um nó pai. Por exemplo, HTML é filho de Document, e body é filho de HTML.</li>
+        <li>Nós-irmãos (Sibling): Nós que partilham o mesmo pai. Por exemplo, head e body são irmãos. </li>
+    </ol>
+
+    <h3>Como funciona:</h3>
+    <ol type="I">
+        <li>Criação: Quando um navegador carrega uma página web, ele analisa o código HTML e constrói a árvore DOM na memória local.</li>
+        <li>Manipulação: Linguagens de script como o JavaScript usam o DOM para interagir com a página.</li>
+        <li>Modificações: Os desenvolvedores podem usar métodos do DOM para:</li>
+    </ol>
+
+    <ul class=" lista-recuada" type=" circle">
+
+        <li>Encontrar elementos específicos na árvore.</li>
+        <li>Alterar o seu conteúdo.</li>
+        <li>Modificar os seus estilos CSS.</li>
+        <li>Criar ou remover novos elementos.</li>
+        <li>Responder a eventos do usuário, como cliques ou pressionamentos de teclas
+    </ul>
+
+    <div id = "msg">Click em mim</div>
+    <script>
+        
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[0]
+        /*
+        var d = window.document.getElementById('msg') //varivael da div
+
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'
+        */
+        var d = window.document.querySelector('div#msg')
+       d.style.color = 'blue'
+
+    </script>
+
+</body>
+</html>

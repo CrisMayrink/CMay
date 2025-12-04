@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head><!--exercício para carregar arquivo json local, imprime o valor de-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloFetchjsonEx02.css">
+    <title>LoadRemotoJson</title>
+</head>
+<body>
+    <h1> Load Remoto Json</h1>
+    <form onsubmit="event.preventDefault(); loadRemoteJson();">
+        <button type="submit">Carregar Json local</button>
+    </form>
+</body>
+    <script type="text/javascript">
+          function loadRemoteJson(){
+              fetch('exJson03.json', {
+                   method: 'get'
+               })
+               .then(function(response) {
+                    response.json().then(function(data){
+                         console.log("Dados do Json local: " + JSON.stringify(data));
+                    });
+               })
+               .catch(function(err) {
+                    console.error('O seguinte erro ocorreu durante a requisição: ' + err);
+              });
+          }
+     </script>
+</html>

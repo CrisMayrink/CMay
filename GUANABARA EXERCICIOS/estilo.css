@@ -1,0 +1,41 @@
+body{
+
+    background-color: #4d20e2;
+    font-family: 15pt Arial, sans-serif;
+    color: #f3f0f0;
+}
+
+header{
+    color: white;
+    text-align: center;
+    
+   
+}
+section{
+    background-color: beige;
+    color: #000;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.274);}
+
+ div{
+    text-align: center;
+    padding: 8px;
+
+ }
+
+    
+/*.alert{
+    font-weight: bold;
+    color: rgb(62, 3, 3);
+    background-color: white;
+}*/
+
+footer{
+    color: white;
+    font-size: 10pt;
+    text-align: center; 
+    font-style: italic;
+    }

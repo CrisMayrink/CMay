@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- instruções ao navegador para controlar as dimensões e escala da pgn.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Estruturas condicionais</title>
+    <style>
+            body {
+            font-size: 25px;
+            background: rgb(45 230 149);
+            color: white;
+            }
+        
+    </style>
+</head>
+<body>
+    
+    <h1>Estrutura condicional if</h1>
+    <p>Verificar se o número é par ou ímpar: </p>
+    <input type = "number" name="n1" id="n1">
+    <button id= "verificar"> Verificar</button>
+    <p id= "resultado"> </p>
+
+    <script>
+     document.getElementById('verificar').addEventListener('click', ()=>{
+        const raw = document.getElementById('n1').value; // pega o valor digitado no input
+        const n1 = Number(raw);
+        const resultado = document.getElementById('resultado');
+        
+        if (Number.isNaN(n1)) {
+            resultado.textContent = 'Por favor, digite um número válido.';
+        } else if (n1 % 2 === 0) {
+            resultado.textContent = `O número ${n1} é par.`;
+        } else {
+            resultado.textContent = `O número ${n1} é ímpar.`;
+        }
+        });
+     </script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

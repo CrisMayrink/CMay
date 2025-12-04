@@ -1,0 +1,30 @@
+body{
+
+    background-color: #4d20e2;
+    font-family: 15pt Arial, sans-serif;
+   /*color: #f3f0f0;*/
+}
+
+header{
+    color: white;
+    text-align: center;
+    
+   
+}
+section{
+    background-color: beige;
+    border-radius: 10px;
+    padding: 15px;
+    width: 15%;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.274);}
+div{
+    text-align: center;
+     }
+
+
+footer{
+    color: white;
+    text-align: center; 
+    font-style: italic;
+    }

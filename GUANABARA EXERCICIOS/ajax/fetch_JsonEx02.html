@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estiloFetchjsonEx02.css">
+    <title>Usando o fetch no JSON</title>
+</head>
+<body>
+    <h1> API de testes Dommy</h1>
+    <form onsubmit="event.preventDefault(); executar();">
+        <button type="submit">Executar</button>
+    </form>
+    <ul id="retorno"></ul>
+    <script src="fetchJsonEx02.js"></script>
+    <script>
+        const executar = () =>{
+            getUsers("retorno");
+        }
+    </script>
+
+</body>
+</html>

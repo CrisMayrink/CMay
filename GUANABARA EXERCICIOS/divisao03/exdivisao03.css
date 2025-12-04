@@ -1,0 +1,75 @@
+body{
+
+    background-color: #4d20e2;
+    font-family: 15pt Arial, sans-serif;
+   /*color: #f3f0f0;*/
+}
+
+header{
+    color: white;
+    text-align: center;
+    
+   
+}
+section{
+    background-color: beige;
+    border-radius: 10px;
+    padding: 45px;
+    width: 25%;
+    margin: auto;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.274);}
+div{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+     }
+
+.res{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+}
+p{
+    text-align: center;
+   
+}
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px 2px;
+    font-weight: bold;
+    color: white; /* Texto branco para todos */
+}
+
+/* Cor para Adicionar (Verde) */
+#btnAdicionar {
+    background-color: #28a745; 
+}
+
+/* Cor para Dividir (Azul) */
+#btnDividir {
+    background-color: magenta;
+}
+
+/* Cor para Limpar (Vermelho/Perigo) */
+#btnLimpar {
+    background-color: red;
+    
+}
+
+h3{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+.lista-numeros li{
+    margin-bottom: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    text-align: left;
+}
+
+footer{
+    color: white;
+    text-align: center; 
+    font-style: italic;
+    }
