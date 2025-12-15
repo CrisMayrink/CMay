@@ -1,0 +1,15 @@
+import os
+
+arquivo = open("AULA1.py")
+print(arquivo.name)
+print(arquivo.mode)
+print(arquivo.closed)
+arquivo.close()
+print(arquivo.closed)
+arquivo = open("AULA1.py", "r")
+print(arquivo.read())
+print(arquivo.name)
+relpath= os.path.relpath('arquivo.txt')
+print(relpath)
+abspath= os.path.abspath('Aula1.txt')
+print(abspath)
